@@ -1,0 +1,26 @@
+<nav>
+    <brand>Four Paths</brand>
+    <login ng-click="mainNavController.login()" ng-hide="$root.user">
+        Log In
+    </login>
+    <user-info ng-show="$root.user">
+        {{$root.user.displayName}}
+    </user-info>
+    <ul>
+        <li>
+            <a ui-sref="home" ui-sref-active="active">Home</a>
+        </li>
+        <li>
+            <a ui-sref="home" ui-sref-active="active">Tasks</a>
+        </li>
+        <li>
+            <a ui-sref="home" ui-sref-active="active">Events</a>
+        </li>
+        <li>
+            <a ui-sref="home" ui-sref-active="active">Contacts</a>
+        </li>
+        <li>
+            <a ui-sref="home" ui-sref-active="active">Files</a>
+        </li>
+    </ul>
+</nav>
